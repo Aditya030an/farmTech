@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <style>
+        * {
+            margin: 0px 0px 0px 0px;
+            padding: 0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        body {
+            background: url("/WD/img/aboutimage.jpg");
+            height: auto;
+            background-repeat: no-repeat;
+            background-size: cover;
+            aspect-ratio: 20;
+        }
+
+        .navbar {
+            opacity: 1;
+            background-color: rgba(114, 114, 114, 0.612);
+            height: 75px;
+        }
+
+        .logo {
+
+            display: inline-block;
+            color: white;
+            margin: 22px 0px 0px 60px;
+            font-style: none;
+        }
+
+        .item {
+
+            display: inline-block;
+            position: absolute;
+            top: 22px;
+            right: 2px;
+        }
+
+        .item a {
+            margin: 40px;
+            padding: 0px;
+            color: white;
+            text-decoration: none;
+            font-weight: bolder;
+            font-size: 18px;
+        }
+        .item a:hover{
+    color: rgb(202, 202, 202);
+}
+
+        .content-box-inner{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 2px solid rgb(201, 200, 200); */
+            /* width: 300px; */
+            /* height: 300px; */
+            font-size: 25px;
+            margin: 90px 126px 5px 162px;
+            padding: 50px 60px 10px 63px;
+        }
+        .navbar h2 strong{
+            color: black;
+        }
+        .content-box-inner p{
+            color: white
+
+        }
+        .change::after{
+            content:'';
+            animation: changetext 3s infinite linear;
+            color: rgb(3, 166, 77);
+        }
+        @keyframes changetext{
+            0%{content:"TECH"}
+            100%{content:"ING"}   
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h2 class="heading">FARMING...<strong>FARM<span class="change"></span></strong></h2>
+        </div>
+        <div class="item">
+            <a href="./farmtech.html">HOME</a>
+            <a href="./about.html">ABOUT</a>
+            <a href="./pages.html">PAGES</a>
+            <a href="./services.html">SERVICES</a>
+            <a href="./contact.html">CONTACT US</a>
+        </div>
+        <!-- <img class="aboutimage" src="aboutimage3.jpg" alt="error"> -->
+        <div class="content-box-inner">
+            <div class="entry-content">
+                <p><strong>FARMTECH</strong> (FARMING INDIA SOLUTIONS) is a one-stop destination for modern and
+                    traditional agriculture techniques, information, expert advice.</p>
+                <p style="text-align: left;">This portal has been started with the purpose of giving a platform for
+                    farmers and entrepreneurs where they can find agriculture information, project reports, expert
+                    advice and products to do farming and agribusiness commercially and profitably. This is one of the
+                    best agriculture portal in India. Here, we cover field crops, horticulture, animal husbandry,
+                    aquaculture, organic farming, hi-tech farming, agribusiness, landscape gardening and terrace
+                    gardening.</p>
+                <p style="text-align: left;">Farmtech is backed by a qualified and competent research team
+                    comprising of Domain Experts, Agriculture &amp; Agribusiness Consultants, Chartered Accountants, IT
+                    Professionals, Marketing Specialists, Banking Specialists having vast experience in their respective
+                    fields.</p>
+            </div>
+        </div>
+    </nav>
+
+</body>
+
+</html>

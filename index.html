@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY WORLD</title>
+    <style>
+        *{
+            margin:0px 0px 0px 0px;
+            padding:0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          
+        }
+        body{
+            
+            background: url("/wd/img/aboutimage.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        .logo > h1{
+            margin: -13px;
+            font-size: 40px;
+        }
+        .navbar{
+            opacity: 1;
+            background-color: rgba(114, 114, 114, 0.612);
+            height: 75px;
+        }
+        .logo{
+           
+            display: inline-block;
+            color: white;
+            margin: 22px 0px 0px 60px;
+            font-style: none;
+        }
+        .item{
+            
+            display: inline-block;
+            position: absolute;
+            top: 22px;
+            right: 2px;
+        } 
+        .item a{
+            margin: 40px;
+            padding: 0px;
+            color: white;
+            text-decoration: none;
+            font-weight: bolder;
+            font-size: 18px;
+        }
+        .content{
+            width:100%;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        .text h3{
+            font-size: 35px;
+            font-weight: 400;
+            letter-spacing: 3px;
+            word-spacing: normal;
+            text-shadow: 1px 1px 2px black;
+        }
+        .text h1{
+            font-size: 55px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            word-spacing: normal;
+            text-shadow: 2px 1px 5px black;
+            margin: 30px 0px 20px 0px;
+            text-transform: uppercase;
+        }
+        .text p{
+           font-size: 25px;
+           color:#eee;
+           word-spacing: 2px;
+           margin-bottom: 25px;
+           text-shadow: 1px 1px 1px black;
+        }
+        .text a{
+           padding: 12px 30px;
+           border-radius: 4px;
+           outline: none;
+           text-transform: uppercase;
+           font-size: 13px;
+           font-weight: 500;
+           text-decoration: none;
+           letter-spacing: 1px;
+        }
+        .btnone{
+            background: white;
+            color: black;
+        }
+        .btntwo{
+            background: rgb(3, 166, 77);
+            color: white;
+        }
+        .change_content::after{
+            content:'';
+            animation: changetext 10s infinite linear;
+            color: rgb(3, 166, 77);
+        }
+        @keyframes changetext{
+            0%{content:"Darjeeling"}
+            20%{content:"Agra"}
+            35%{content:"Jaipur"}
+            60%{content:"Kerala"}
+            80%{content:"Delhi"}
+            100%{content:"Mumbai"}
+            
+        }
+        .item a:hover{
+            color:  rgb(3, 166, 77);
+        }
+        .btnone:hover{
+            background: rgb(3, 166, 77);
+            color: white;
+        }
+        .btntwo:hover{
+            background: white;
+            color: black
+        }
+        .change::after{
+            content:'';
+            animation: changetext1 5s infinite ease-in;
+            color: rgb(3, 166, 77);
+        }
+        @keyframes changetext1{
+            0%{content:"TECH"}
+            100%{content:"ING"}   
+        }
+        
+        a.page:active{
+            color:aqua;
+        }
+        a.page:visited{
+            
+        }
+        .sub-navbar{
+            /* border: 1px solid red; */
+            background-color: transparent;
+            height: 70px;
+            margin: 9px 34px ;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            border-radius: 19px;
+        }
+        .sub-item {
+            /* border: 1px solid yellow; */
+            height: 70px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: center;
+        }
+        .sub-item div{
+            background-color: white;
+            /* border: 1px solid red;  */
+            border-radius: 6px;
+            box-shadow: 1px 1px 8px gray;
+            width: 200px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
+        .sub-item > div > a {
+            /* border: 1px solid pink; */
+            background-color: white;
+            border-radius: 6px;
+            width: 200px;
+            height: 30px;
+            color: rgb(3, 189, 87);
+            text-decoration: none;
+            font-weight: bolder;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
+        .sub-item > div > a:hover{
+            background-color:rgb(3, 189, 87) ;
+            color: white;
+            box-shadow: 1px 1px 4px gray;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><h1><strong>FARM<span class="change"></span></strong></h1></div>
+            <div class="item">
+                <a href="./first.html">HOME</a>
+                <a href="./about.html">ABOUT</a>  
+                <a href="./service.html">SERVICE</a>
+                <a href="#">CONTACT US</a>
+            </div>
+        </nav>
+       
+        <div class="content">
+            <div class="text">
+                <h3>Welcome To FARMTECH</h3>
+                <h1>FARMING IN A  <span class="change_content"></span></h1>
+                <p>"India is one of the farming hub"</p>
+                <a href="#" class="btnone">Learn more</a>
+                <a href="./sign_page.html" class="btntwo">Signup here</a>
+            </div>
+        </div>
+    </header>
+    <footer>
+        <nav class="sub-navbar">
+            <div class="sub-item">
+                <div><a href="./tools.html">TOOLS</a></div>
+                <div><a href="./mach.html">MACHINE</a></div>
+                <div><a href="./shop.html">SHOP</a></div>
+                <div><a href="./land.html">LAND</a></div>
+                <div><a href="https://www.accuweather.com/en/us/google/94043/weather-forecast/74907_poi">WEATHER</a></div>
+                <div><a href="https://economictimes.indiatimes.com/news/economy/agriculture">NEWS</a></div>
+            </div>
+        </nav>
+    </footer>
+       
+    
+</body>
+</html>

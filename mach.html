@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine introduction</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        #navbar{
+            /* border:1px solid red; */
+            height: 80px;
+            display: flex;
+            font-size: 40px;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            border-radius:13px ;
+            box-shadow: 1px 2px 7px gray;
+            background: linear-gradient(130deg, white, gray);
+            color: white;
+        }
+        #navbar > #logo:first-letter{
+            /* content: ''; */
+            
+            text-decoration: underline;
+            color: rgba(2, 130, 2, 0.742);
+            /* height: 3px;
+            width: 30px; */
+            /* background: linear-gradient(135deg, #5ee784, #058c3d) ; */
+        }
+        #intro{
+            /* border: 1px solid red; */
+            height: 600px;
+            width: 100%;
+            background-color:rgba(2, 130, 2, 0.742) ;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        #intro > div{
+            height: 400px;
+            width: 100px;
+            /* border: 2px solid white; */
+
+        }
+        #write{
+            flex-grow: 2;
+            font-size: 30px;
+            padding: 4px;
+            color: white;
+            border-radius: 15px;
+            /* border: 1px solid black; */
+        }
+        #photo{
+            flex-grow:1.5;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+        }
+        #photo > div{
+            margin: 7px;
+            height: 100px;
+            width: 290px;
+            /* border: 1px solid white; */
+        }
+        .p1 > img{
+            height: 100px;
+            width: 290px;
+        }
+        .p2 > img{
+            height: 100px;
+            width: 290px;
+        }
+        .p3 > img{
+            height: 100px;
+            width: 290px;
+        }
+        .p4 > img{
+            height: 100px;
+            width: 290px;
+        }
+        .p5 > img{
+            height: 100px;
+            width: 290px;
+        }
+        #search{
+            /* border: 1px solid red; */
+            height: 70px;
+            width: 100%;
+            margin-top: -30px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            align-content: center;
+            justify-content: space-between;
+        }
+        #search > label{
+            /* border: 1px solid pink; */
+            font-size: 20px;
+            width: 430px;
+        }
+        
+        input{
+            margin: 8px;
+            outline:none;
+            border: none;
+            padding: 10px;
+            background: white ;
+            box-shadow: 0px 5px 10px 0 rgba(0,0,0,0.3), 0 7px 21px 0 rgba(0,0,0,0.20);
+            width: 400px;
+            font-size: 20px;
+        }
+        input::placeholder{
+            font-size: 20px;
+            color: gray;
+        }
+        #container{
+            /* border: 1px solid red; */
+        }
+        #container > div{
+            /* border: 1px solid red; */
+            height: 300px;
+            width: 100%;
+            background-color:rgba(2, 130, 2, 0.742) ;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .content > div{
+            height: 230px;
+            width: 100px;
+            /* border: 2px solid white; */
+        }
+        .know{
+            flex-grow: 2;
+            font-size: 25px;
+            padding: 4px;
+            color: white;
+            border-radius: 15px;
+            /* border: 1px solid black; */
+        }
+        .image{
+            flex-grow:0.7;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+        }
+        #img3{
+            background-image: url("./img/tool3.jpeg");
+            background-size: 200px ;
+            background-repeat: no-repeat;
+            position: relative;
+            
+
+        }
+        #img1{
+            height: 200px;
+            width: 100px;
+        }
+        /* #know{
+            flex-grow: 2;
+            width: 300px;
+            border: 1px solid white;
+        }
+        #image{
+            flex-grow: 1;
+            border: 1px solid white;
+        } */
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div id="logo">MACHINTRO</div>
+        </nav>
+    </header>
+    <main>
+        <div id="intro">
+            <div id="write">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus accusantium, quaerat in, quae quibusdam illum suscipit facilis eligendi rem esse, dolorem corrupti doloremque sequi sed voluptate voluptas? Facilis, voluptas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, cumque. Earum, voluptatum quidem, vel corrupti eaque dignissimos praesentium perspiciatis, quasi molestiae magnam dolorum asperiores ipsa natus dolore dolorem assumenda explicabo quod fugiat aliquam? Saepe debitis cum eos placeat earum at perferendis ad id labore eveniet obcaecati corrupti quasi sint, numquam doloribus sed ut ipsa similique voluptates provident modi aliquid ab. Velit fuga fugit vero odio corporis magnam saepe veritatis.
+            </div>
+            <div id="photo">
+                <div class="p1">
+                    <img src="/WD/img/m1.jpeg" alt="">
+                </div>
+                <div class="p2">
+                    <img src="/WD/img/t1.jpeg" alt="">
+                </div>
+                <div class="p3">
+                    <img src="/WD/img/t2.jpeg" alt="">
+                </div>
+                <div class="p4">
+                    <img src="/WD/img/t3.jpeg" alt="">
+                </div>
+                <div class="p5">
+                    <img src="/WD/img/t4.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="search">
+            <label id="s1">
+                <input type="text" placeholder="Enter your Machine name">
+            </label>
+        </div>
+       <div id="container">
+            <h1>Top 10 Agricultural Equipment For Farming</h1>
+            <div id="tool1" class="content">
+                <div class="know">
+                    <h1>2 & 4 Stroke Sprayer Pump (Agricultural Sprayer)</h1>
+                    <span>
+                        Talking about the price of 2 & 4 Stroke power supply sprayer, it is available in an affordable price range at Rs. 9,000 – Rs. 22,000. The price of 2 & 4 Stroke Sprayer Pump is very convenient and budget-friendly, also very easy to buy. 2 & 4 Stroke spray pumps, both come in high quality, but 4 stroke spray pumps have twice the capacity than 2 stroke spray pumps.
+                    </span>
+                </div>
+                <div class="image" id="img1">
+                    <img src="./img/m1.jpeg">
+                </div>
+            </div>
+            <div id="tool2" class="content">
+                <div class="know">
+                    <h1> Engine Driven Portable Agricultural Sprayer</h1>
+                    <span>
+                        It is shaped like an electric motor. It can be placed comfortably in a low place. It has been launched in two categories with many attractive features.  It has an engine-powered portable sprayer and the other is a disinfectant / sanitary sprayer engine-driven portable sprayer. 
+                    </span>
+                </div>
+                <div class="image" id="img2">
+                    <img src="./img/m2.jpeg">
+                </div>
+            </div>
+            <div id="tool3" class="content">
+                <div class="know">
+                    <h1> Mini sprayer</h1>
+                    <span>
+                        These sprayers are proving to be extremely useful for small farmers due to their manual operation. It costs neither engine nor electricity. For this reason, every small farmer can use them. There are many types of mini sprayers in the market which are available in 1.2 liters to 100 liters. The farmer can buy it from the market at very cheap prices according to its utility. Different companies have their own rates as follows.
+                    </span>
+                </div>
+                <div class="image" id="img3">
+                    <img src="./img/m3.jpeg">
+                </div>
+            </div>
+            <div id="tool4" class="content">
+                <div class="know">
+                    <h1>Trolley Pump</h1>
+                    <span>
+                        The trolley pump is more useful for those farmers who have a lot of land for cultivation. In this, disinfectants can be sprayed in a short time. This will save the labor and time of the farmers and increase the yield and increase the profits.
+                    </span>
+                </div>
+                <div class="image" id="img4">
+                    <img src="./img/m4.jpeg">
+                </div>
+            </div>
+            <div id="tool5" class="content">
+                <div class="know">
+                    <h1>Trailer sprayer</h1>
+                    <span>
+                        Trailer mounted sprayers or tractor mounted sprayers are those used for mounting trailers and tractors. The farmer should choose this in view of its necessity and ease of use. There are many types of tractor sprayers available in the market which is extremely useful. 
+                    </span>
+                </div>
+                <div class="image" id="img5">
+                    <img src="./img/m5.jpeg">
+                </div>
+            </div>
+            <div id="tool6" class="content">
+                <div class="know">
+                    <h1>Combine Harvester</h1>
+                    <span>
+                        A combine harvester is used for the processes of farming such as reaping, threshing, and winnowing. Combine Harvester is the best machine that is used to harvest all types of crops like barley, wheat, rye, oats, corn, and much more. To increase farming activities a combine harvester is a perfect option for you. The price of John Deere combine harvester starts from Rs. 24.5 lakh* to Rs. 28 lakh*. It may vary according to the model and region. Find the best Agriculture Equipment as Harvester for your farming needs.
+                    </span>
+                </div>
+                <div class="image" id="img6">
+                    <img src="./img/m6.jpeg">
+                </div>
+            </div>
+            <div id="tool7" class="content" >
+                <div class="know">
+                    <h1> Cultivator </h1>
+                    <span>
+                        A cultivator is one of the most essential farming machines that are used for tillage activities. It is the oldest farming machine that has been used many of the years. It is used to stir or loosen the soil or either to eliminate weeds and to provide drainage. The cultivator is used by an attachment from a tractor or self-propelled.
+                    </span>
+                </div>
+                <div class="image" id="img7">
+                    <img src="./img/m7.jpeg">
+                </div>
+            </div>
+            <div id="tool8" class="content" >
+                <div class="know">
+                    <h1>Roto Seed Drill</h1>
+                    <span>
+                        Roto Seed Drill is one of the popular machines for farming that is made with the combination of  Rotary Tiller and Seed Drill. It is used in almost all over India for the purpose of sowing seeds of wheat, barley, grass seeding. This farming machine is easy to operate and also gives fewer maintenance expenses. It has an easy operating system of changing seed varieties with less wastage of seeds.
+                    </span>
+                </div>
+                <div class="image" id="img8">
+                    <img src="./img/tool8.jpeg">
+                </div>
+            </div>
+       </div>
+    </main>
+    
+</body>
+</html>

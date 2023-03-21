@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoping</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box; 
+            font-family: 'Poppins',sans-serif;
+        }
+        body{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* background-color: black; */
+        }
+        body  div{
+            border: 1px solid red;
+            width: 100px;
+            max-height: 1430px;
+            border-radius: 3px;
+            margin:2px ;
+        }
+        #left{
+            flex-grow: 1;
+            height: 580px;
+        }
+        #center{
+            flex-grow: 4;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        #center  div {
+            border: 1px solid pink;
+            height: 400px;
+            width: 295px;
+            margin: 3px;
+        }
+        /* #center  :hover{
+            background-color: black;
+            box-shadow: 1px 1px 6px gray;
+        } */
+        .center-div:hover{
+            box-shadow: 1px 1px 6px gray;
+        }
+        #center div img{
+            height: 350px;
+            width:295px ;
+            z-index: -1;
+        }
+        #center div  p{
+            position: relative;
+            top: -80px;
+            /* border: 2px solid green; */
+            background-color:white;
+            height: 76px;
+            width:294px ;
+            overflow: hidden;
+            /* box-shadow: 1px 1px 6px gray; */
+        }
+        #center  div  p:hover{
+            height: 100px;
+            box-shadow: 1px 1px 6px gray;
+        }
+        .s1{
+            color: gray;
+        }
+        .s2{
+            font-weight: bolder;
+            font-size: larger;
+        }
+        .s3{
+            color: gray;
+            text-decoration: line-through;
+        }
+        .s4{
+            color: rgba(0, 207, 0, 0.788);
+        }
+
+        .btn1{
+            background-color: rgb(250, 212, 218);
+            border: none;
+            border-radius: 7px;
+            height: 30px;
+            width: 30px;
+            font-size:larger;
+            position: relative;
+            top: -350px;
+            left: 13px;
+            z-index: 2;
+        }
+        .btn2{
+            background-color: lavender;
+            border-radius: 7px;
+            border: none;
+            height: 30px;
+            width: 30px;
+            font-size:larger;
+            position: relative;
+            top: -350px;
+            left: 218px;
+            z-index:2;
+        }
+        #right{
+            flex-grow: 1;
+            height: 600px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        #container{
+            height: 50px;
+            width: 300px;
+            font-size: 40px;
+            background-color: rgba(252, 105, 154, 0.776);
+            color: white;
+            border-radius: 14px;
+            box-shadow: 7px 7px 5px rgb(110, 110, 197);
+            text-shadow: 1px 1px 4px white;
+            text-align: center;
+        }
+       
+        #container2{
+            height: 40px;
+            width:300px;
+            position: absolute;
+            top: 80px;
+            font-size: 30px;
+            background-color: rgb(181, 170, 244);
+            color: rgb(57, 48, 48);
+            text-shadow: 1px 1px 0.3px rgb(48, 44, 44);
+            border-radius: 9px;
+            text-align: center;
+            box-shadow: 6px 7px 9px pink;
+        }
+        #demo{
+            background-color: blue;
+            height: 90px;
+        }
+        #button{
+            height: 22px;
+        }
+
+    </style>
+</head>
+<body>
+    
+        <div id ="left">
+        
+        </div>
+        <div id="center">
+            <div class="center-div">
+                <img src ="/WD/img/t1.jpeg">
+                <button class="btn1" onclick="">-</button>
+                <button class="btn2" id="outer" onclick=myFunc(0)>+</button>
+                <p class="center-div-para"> 
+                    <span class="s1">SFR</span> <br>
+                    FAST Trenddy Tainer Lace-ups Sporty Casuals Running Sho...
+                    <br><span class="s2">₹279</span> <span class="s3">₹998</span> <span class="s4">72% off</span><br>
+                    <span class="s1">Size</span> 6, 7, 8, 9, 10
+                </p>
+            </div>
+            <div class="center-div">
+                <img src ="/WD/img/f2.jpeg">
+                <button class="btn1" onclick="">-</button>
+                <button class="btn2" onclick=myFunc(0)>+</button>
+                <p>
+                    <span class="s1">SFR</span> <br>
+                    FAST Trenddy Tainer Lace-ups Sporty Casuals Running Sho...
+                    <br><span class="s2">₹279</span> <span class="s3">₹998</span> <span class="s4">72% off</span><br>
+                    <span class="s1">Size</span> 6, 7, 8, 9, 10
+                </p>
+            </div>
+            <div class="center-div">
+                <img src ="/WD/img/t3.jpeg">
+                <button class="btn1" onclick="">-</button>
+                <button class="btn2" onclick=myFunc(0)>+</button>
+                <p>
+                    <span class="s1">SFR</span> <br>
+                    FAST Trenddy Tainer Lace-ups Sporty Casuals Running Sho...
+                    <br><span class="s2">₹279</span> <span class="s3">₹998</span> <span class="s4">72% off</span><br>
+                    <span class="s1">Size</span> 6, 7, 8, 9, 10
+                </p>
+            </div> 
+            <div class="center-div">
+                <img src ="/WD/img/f4.jpeg">
+                <button class="btn1" onclick="">-</button>
+                <button class="btn2" onclick="myFunc(0)">+</button>
+                <p>
+                    <span class="s1">SFR</span> <br>
+                    FAST Trenddy Tainer Lace-ups Sporty Casuals Running Sho...
+                    <br><span class="s2">₹279</span> <span class="s3">₹998</span> <span class="s4">72% off</span><br>
+                    <span class="s1">Size</span> 6, 7, 8, 9, 10
+                </p>
+            </div>
+            <div class="center-div">
+                <img src ="/WD/img/f5.jpeg">
+                <button class="btn1" onclick="">-</button>
+                <button class="btn2" onclick="">+</button>
+                <p>
+                    <span class="s1">SFR</span> <br>
+                    FAST Trenddy Tainer Lace-ups Sporty Casuals Running Sho...
+                    <br><span class="s2">₹279</span> <span class="s3">₹998</span> <span class="s4">72% off</span><br>
+                    <span class="s1">Size</span> 6, 7, 8, 9, 10
+                </p>
+            </div>
+            <div class="center-div">
+                <img src ="/WD/img/t4.jpeg">
+                <button class="btn1">-</button>
+                <button class="btn2">+</button>
+                <p>
+                    <span class="s1">SFR</span> <br>
+                    FAST Trenddy Tainer Lace-ups Sporty Casuals Running Sho...
+                    <br><span class="s2">₹279</span> <span class="s3">₹998</span> <span class="s4">72% off</span><br>
+                    <span class="s1">Size</span> 6, 7, 8, 9, 10
+                </p>
+            </div>
+            <div class="center-div">
+                <img src ="/WD/img/tool5.jpeg">
+                <button class="btn1" >-</button>
+                <button class="btn2">+</button>
+                <p>
+                    <span class="s1">SFR</span> <br>
+                    FAST Trenddy Tainer Lace-ups Sporty Casuals Running Sho...
+                    <br><span class="s2">₹279</span> <span class="s3">₹998</span> <span class="s4">72% off</span><br>
+                    <span class="s1">Size</span> 6, 7, 8, 9, 10
+                </p>
+            </div>
+            <div class="center-div">
+                <img src ="/WD/img/m1.jpeg">
+                <button class="btn1" onclick="">-</button>
+                <button class="btn2" onclick="">+</button>
+                <p>
+                    <span class="s1">SFR</span> <br>
+                    FAST Trenddy Tainer Lace-ups Sporty Casuals Running Sho...
+                    <br><span class="s2">₹279</span> <span class="s3">₹998</span> <span class="s4">72% off</span><br>
+                    <span class="s1">Size</span> 6, 7, 8, 9, 10
+                </p>
+            </div>
+            <div class="center-div">
+                <img src ="/WD/img/m2.jpeg">
+                <button class="btn1" onclick="">-</button>
+                <button class="btn2" onclick="">+</button>
+                <p>
+                    <span class="s1">SFR</span> <br>
+                    FAST Trenddy Tainer Lace-ups Sporty Casuals Running Sho...
+                    <br><span class="s2">₹279</span> <span class="s3">₹998</span> <span class="s4">72% off</span><br>
+                    <span class="s1">Size</span> 6, 7, 8, 9, 10
+                </p>
+            </div>
+            <div class="center-div">
+                <img src ="/WD/img/m3.jpeg">
+                <button class="btn1">-</button>
+                <button class="btn2">+</button>
+                <p>
+                    <span class="s1">SFR</span> <br>
+                    FAST Trenddy Tainer Lace-ups Sporty Casuals Running Sho...
+                    <br><span class="s2">₹279</span> <span class="s3">₹998</span> <span class="s4">72% off</span><br>
+                    <span class="s1">Size</span> 6, 7, 8, 9, 10
+                </p>
+            </div>
+            <div class="center-div">
+                <img src ="/WD/img/m4.jpeg">
+                <button class="btn1" onclick="">-</button>
+                <button class="btn2" onclick="">+</button>
+                <p>
+                    <span class="s1">SFR</span> <br>
+                    FAST Trenddy Tainer Lace-ups Sporty Casuals Running Sho...
+                    <br><span class="s2">₹279</span> <span class="s3">₹998</span> <span class="s4">72% off</span><br>
+                    <span class="s1">Size</span> 6, 7, 8, 9, 10
+                </p>
+            </div>
+            <div class="center-div">
+                <img src ="/WD/img/m5.jpeg">
+                <button class="btn1" onclick="">-</button>
+                <button class="btn2" onclick="">+</button>
+                <p> 
+                    <span class="s1">SFR</span> <br>
+                    FAST Trenddy Tainer Lace-ups Sporty Casuals Running Sho...
+                    <br><span class="s2">₹279</span> <span class="s3">₹998</span> <span class="s4">72% off</span><br>
+                    <span class="s1">Size</span> 6, 7, 8, 9, 10
+        
+                </p>
+            </div>
+            <div class="center-div">
+                <img src ="/WD/img/m6.jpeg">
+                <button class="btn1">-</button>
+                <button class="btn2">+</button>
+                <p>
+                    <span class="s1">SFR</span> <br>
+                    FAST Trenddy Tainer Lace-ups Sporty Casuals Running Sho...
+                    <br><span class="s2">₹279</span> <span class="s3">₹998</span> <span class="s4">72% off</span><br>
+                    <span class="s1">Size</span> 6, 7, 8, 9, 10
+                </p>
+            </div>
+            <div class="center-div">
+                <img src ="/WD/img/m7.jpeg">
+                <button class="btn1" onclick="">-</button>
+                <button class="btn2" onclick="">+</button>
+                <p>
+                    <span class="s1">SFR</span> <br>
+                    FAST Trenddy Tainer Lace-ups Sporty Casuals Running Sho...
+                    <br><span class="s2">₹279</span> <span class="s3">₹998</span> <span class="s4">72% off</span><br>
+                    <span class="s1">Size</span> 6, 7, 8, 9, 10
+                </p>
+            </div>
+            <div class="center-div">
+                <img src ="/WD/img/m8.jpeg">
+                <button class="btn1" onclick="">-</button>
+                <button class="btn2" onclick="">+</button>
+                <p>
+                    <span class="s1">SFR</span> <br>
+                    FAST Trenddy Tainer Lace-ups Sporty Casuals Running Sho...
+                    <br><span class="s2">₹279</span> <span class="s3">₹998</span> <span class="s4">72% off</span><br>
+                    <span class="s1">Size</span> 6, 7, 8, 9, 10
+                </p>
+            </div>
+        </div>
+        <div id="right">
+            <div id="container">MY CARD :-</div>
+            <div id="container2">
+                Number Of Item's:-
+                <p id="demo">0</p>
+            </div>
+        </div>
+</body>
+</html>

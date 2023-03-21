@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <style>
+        *{
+            margin:0px 0px 0px 0px;
+            padding:0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          
+        }
+        .navbar{
+            opacity: 1;
+            background-color: rgba(114, 114, 114, 0.612);
+            height: 75px;
+        }
+        .logo{
+           
+            display: inline-block;
+            color: white;
+            margin: 22px 0px 0px 60px;
+            font-style: none;
+        }
+        .item{
+            
+            display: inline-block;
+            position: absolute;
+            top: 22px;
+            right: 2px;
+        } 
+        .item a{
+            margin: 40px;
+            padding: 0px;
+            color: white;
+            text-decoration: none;
+            font-weight: bolder;
+            font-size: 18px;
+        }
+        main{
+            height: 1000px;
+            display: flex;
+            flex-direction: row;
+            /* border: 1px solid red; */
+            flex-wrap: wrap;
+            /* align-items: center;
+            align-content: center;
+            justify-content: center; */
+        }
+        /* main > div {
+            border: 1px solid pink;
+            margin: 1px;
+            height: 500px;
+            width: 100%;
+            background: linear-gradient(35deg, #eaf2ed, #b6b6b6);
+            border-radius:3px;
+        }
+        h2{
+            font-size: 50px;
+            position:relative;
+            margin-left: 30px;
+            top: 70px;
+            z-index: 8;
+        }
+        img{
+            position:relative;
+            left: 180px;
+            top: 90px;
+            opacity:1;
+            z-index: 1;
+            border-radius: 19px;
+            box-shadow: 1px 1px 7px gray;
+        }
+        #content{
+            padding: 13px;
+            position:relative;
+            top: -290px;
+            width: 800px;
+            height: 370px;
+            z-index: 4;
+            left:750px;
+            border: 1px solid blue;
+            border-radius: 13px;
+            box-shadow: 1px 1px 7px gray;
+            font-size: 35px;
+            overflow: hidden;
+            background: linear-gradient(35deg, #eaf2ed, #b6b6b6);
+        } */
+        .content{
+            display:flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-evenly;
+            align-items:center ;
+            align-content: center;
+            /* border: 1px solid red; */
+            height: 500px;
+            border-radius: 9px;
+            background:linear-gradient(35deg, #eaf2ed, #b6b6b6) ;
+        }
+        .content {
+            /* border: 3px solid blue; */
+            border-radius: 15px;
+            box-shadow: 1px 1px 3px grey;
+        }
+        .item1{
+            position: relative;
+            top: -190px;
+            width: 200px;
+            font-size: 40px;
+            padding: 7px;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+        }
+        .item2{
+            align-items: center;
+            position: relative;
+            top: 20px;
+            left: -30px;
+            border-radius: 15px;
+            box-shadow: 1px 1px 3px grey;
+        }
+        .item3{
+            width: 800px;
+            height: 300px;
+            font-size: 30px;
+            padding: 3px;
+            /* border-radius: 15px; */
+            /* box-shadow: 1px 1px 3px grey; */
+            background:transparent ;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><h1>FARMING....</h1></div>
+            <div class="item">
+                <a href="#">HOME</a>
+                <a href="./aboutus.html">ABOUT</a> 
+                <a href="./page.html">PAGES</a> 
+                <a href="./service.html">SERVICE</a>
+                <a href="#">CONTACT US</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="tools" class="content">
+            <h2 class="item1">TOOLS</h2>
+            <img src="./img/f2.jpeg" alt="" class="item2">
+            <p class="item3">Lorem ipsum dolor sit ame consectetur adipisicing elit. Perferendis quam facilis temporibus corrupti incidunt aperiam? Odit blanditiis nostrum ut esse dolore dignissimos cumque velit facilis debitis? Modi incidunt tempore repellendus quae molestias totam pariatur.</p>
+        </div>
+        <div id="weather" class="content">
+            <h2 class="item1">WEATHER</h2>
+            <img src="./img/f7.jpeg" alt="" class="item2">
+            <p class="item3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quam facilis temporibus corrupti incidunt aperiam? Odit blanditiis nostrum ut esse dolore dignissimos cumque velit facilis debitis? Modi incidunt tempore repellendus quae molestias totam pariatur.</p>
+        </div>
+        <div id="mech" class="content">
+            <h2 class="item1">MACHINE</h2>
+            <img src="./img/f4.jpeg" alt="" class="item2">
+            <p class="item3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quam facilis temporibus corrupti incidunt aperiam? Odit blanditiis nostrum ut esse dolore dignissimos cumque velit facilis debitis? Modi incidunt tempore repellendus quae molestias totam pariatur.</p>
+        </div>
+        <div id="shop" class="content">
+            <h2 class="item1">SHOP</h2>
+            <img src="./img/f5.jpeg" alt="" class="item2">
+            <p class="item3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quam facilis temporibus corrupti incidunt aperiam? Odit blanditiis nostrum ut esse dolore dignissimos cumque velit facilis debitis? Modi incidunt tempore repellendus quae molestias totam pariatur.</p>
+        </div>
+        <div id="land" class="content">
+            <h2 class="item1">LAND</h2>
+            <img src="./img/f6.jpeg" alt="" class="item2">
+            <p class="item3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quam facilis temporibus corrupti incidunt aperiam? Odit blanditiis nostrum ut esse dolore dignissimos cumque velit facilis debitis? Modi incidunt tempore repellendus quae molestias totam pariatur.</p>
+        </div>
+    </main>
+</body>
+</html>
